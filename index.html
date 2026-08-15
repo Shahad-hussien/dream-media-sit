@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<!-- lang/dir default to Arabic because that's what actually renders on a
+     first visit (scrapt.js falls back to "ar"). Declaring "en" here told
+     crawlers the wrong language. -->
+<html lang="ar" dir="rtl" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dream Media - Digital Marketing Agency</title>
+
+  <!-- ============================================
+       SEO
+  ============================================ -->
+  <title>Dream Media | Marketing &amp; Media Agency in Baghdad — دريم ميديا</title>
+  <meta name="description" content="دريم ميديا — شركة تسويق وإعلان في بغداد متخصصة في التسويق الرقمي، بناء العلامة التجارية، إنتاج الفيديو، الطباعة، إدارة الفعاليات، والتدريب والاستشارات.">
+  <meta name="author" content="Dream Media">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://dream-media-sit.vercel.app/">
+
+  <!-- Open Graph (link previews on WhatsApp, Facebook, LinkedIn, Instagram) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dream Media">
+  <meta property="og:title" content="Dream Media | وكالة تسويق وإعلان في بغداد">
+  <meta property="og:description" content="نبني التسويق الرقمي، الهوية التجارية والتجربة. خدمات التسويق، الإعلان، إنتاج الفيديو، الطباعة، الفعاليات، والتدريب في بغداد.">
+  <meta property="og:url" content="https://dream-media-sit.vercel.app/">
+  <meta property="og:image" content="https://dream-media-sit.vercel.app/images/feature-banne.jpeg">
+  <meta property="og:image:width" content="1500">
+  <meta property="og:image:height" content="844">
+  <meta property="og:image:alt" content="فريق دريم ميديا في ملتقى بغداد العقاري">
+  <meta property="og:locale" content="ar_IQ">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dream Media | وكالة تسويق وإعلان في بغداد">
+  <meta name="twitter:description" content="نبني التسويق الرقمي، الهوية التجارية والتجربة. خدمات التسويق، الإعلان، إنتاج الفيديو، الطباعة، الفعاليات، والتدريب في بغداد.">
+  <meta name="twitter:image" content="https://dream-media-sit.vercel.app/images/feature-banne.jpeg">
+
+  <meta name="theme-color" content="#050910">
+
+  <!-- Structured data: powers Google rich results / knowledge panel -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://dream-media-sit.vercel.app/#organization",
+    "name": "Dream Media",
+    "alternateName": "دريم ميديا",
+    "url": "https://dream-media-sit.vercel.app/",
+    "logo": "https://dream-media-sit.vercel.app/images/dream%20medai.jpg",
+    "image": "https://dream-media-sit.vercel.app/images/feature-banne.jpeg",
+    "description": "شركة تسويق وحلول أعمال مقرها بغداد، متخصصة في التسويق الرقمي، إدارة حسابات التواصل الاجتماعي، إنتاج الفيديو، الطباعة، والتدريب.",
+    "telephone": "+964-770-811-8020",
+    "email": "mustafamuafaqdreammedia@outlook.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Baghdad",
+      "addressCountry": "IQ"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Iraq"
+    },
+    "sameAs": [
+      "https://www.instagram.com/dream_mediaco",
+      "https://www.facebook.com/Dreamdigitalmarketing0",
+      "https://www.linkedin.com/company/dreamdigitalmarketingagency0/",
+      "https://www.youtube.com/@DreamMediaprofile"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "خدمات دريم ميديا",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "التسويق والاتصال / Marketing & Communication" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "تدريب الأعمال / Business Training" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "الطباعة / Printing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "إدارة الفعاليات / Event Management" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "التصميم والإبداع / Design & Creatives" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "الأعمال والاستشارات / Business & Consulting" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "تطوير الأعمال / Business Development" } }
+      ]
+    }
+  }
+  </script>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="./images/dream Media.ico" type="image/x-icon">
@@ -170,7 +248,7 @@
 
           <figure class="hero-banner" data-hero-banner>
             <div class="hero-banner-ring" aria-hidden="true"></div>
-            <img src="./images/Untitlekklood-removebg-preview.png" width="200" height="200" alt="Dream Media Hero Banner" class="w-100">
+            <img src="./images/Untitlekklood-removebg-preview.png" width="200" height="200" alt="Dream Media — marketing and media agency in Baghdad" class="w-100">
           </figure>
 
         </div>
@@ -241,7 +319,7 @@
 
                 <div class="card-icon">
                   <img src="./images/service-icon-1.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
+                    alt="">
                 </div>
 
                 <h3 class="h3">
@@ -257,7 +335,7 @@
 
                 <div class="card-icon">
                   <img src="./images/service-icon-2.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
+                    alt="">
                 </div>
 
                 <h3 class="h3">
@@ -273,7 +351,7 @@
 
                 <div class="card-icon">
                   <img src="./images/service-icon-3.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
+                    alt="">
                 </div>
 
                 <h3 class="h3">
@@ -289,7 +367,7 @@
 
                 <div class="card-icon">
                   <img src="./images/service-icon-4.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
+                    alt="">
                 </div>
 
                 <h3 class="h3">
@@ -305,7 +383,7 @@
 
                 <div class="card-icon">
                   <img src="./images/service-icon-5.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
+                    alt="">
                 </div>
 
                 <h3 class="h3">
@@ -321,7 +399,7 @@
 
                 <div class="card-icon">
                   <img src="./images/service-icon-6.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
+                    alt="">
                 </div>
 
                 <h3 class="h3">
@@ -337,7 +415,7 @@
 
                 <div class="card-icon">
                   <img src="./images/service-icon-7.png" width="30" height="30" loading="lazy"
-                    alt="service icon">
+                    alt="">
                 </div>
 
                 <h3 class="h3">
@@ -377,7 +455,7 @@
                  original combined image below stays as the fallback. -->
             <div class="partners-marquee" data-partners role="img" aria-label="Our partners and collaborators">
               <figure class="partners-banner" data-partners-fallback>
-                <img src="./images/تعاونات.jpg" alt="Dream Media Partners and Collaborations" class="w-100">
+                <img src="./images/تعاونات.jpg" alt="Logos of Dream Media's partner companies and collaborators" class="w-100">
               </figure>
             </div>
           </div>
@@ -395,7 +473,7 @@
         <div class="container" data-feature-pin>
 
           <figure class="feature-banner" data-feature-visual>
-            <img src="./images/feature-banne.jpeg" width="582" height="585" loading="lazy" alt="Dream Media Features" class="w-100" data-feature-base-img>
+            <img src="./images/feature-banne.jpeg" width="582" height="585" loading="lazy" alt="Dream Media team at the Baghdad Real Estate Gathering" class="w-100" data-feature-base-img>
           </figure>
 
           <div class="feature-content">
