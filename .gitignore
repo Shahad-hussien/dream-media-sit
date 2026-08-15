@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Vercel
+.vercel/
+
+# Local tooling / editor
+.claude/
+.vscode/
+.idea/
+
+# OS cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*

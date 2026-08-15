@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Media - Digital Marketing Agency</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/dream Media.ico" type="image/x-icon">
+  <link rel="icon" type="image/x-icon" href="./images/dream Media.ico">
+
+  <!-- Swiper CSS (loaded first so our own styles can override it —
+       Swiper sets .swiper-slide{height:100%}, which otherwise beats
+       .marketing-card's fixed height and lets slides size to content) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./diigeital.css">
+  <link rel="stylesheet" href="./staily.css">
+
+  <!-- Phosphor Icons ("regular" is the line-only weight) -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- ============================================
+       PRELOADER
+  ============================================ -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-panel preloader-panel-1"></div>
+    <div class="preloader-panel preloader-panel-2"></div>
+    <div class="preloader-inner">
+      <span class="preloader-mark">Dream Media</span>
+      <span class="preloader-count"><span id="preloaderNum">0</span>%</span>
+    </div>
+    <div class="preloader-bar"><span id="preloaderBar"></span></div>
+  </div>
+
+  <!-- ============================================
+       CUSTOM CURSOR
+  ============================================ -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span class="cursor-ring-label"></span></div>
+
+  <!-- ============================================
+       HEADER SECTION
+  ============================================ -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <!-- Logo -->
+      <a href="#top" class="logo" data-cursor="">
+        <img src="./images/dream medai.jpg" alt="Dream Media" class="logo-img">
+      </a>
+
+      <!-- Navigation -->
+      <nav class="navbar" data-navbar>
+        <div class="wrapper">
+          <a href="#top" class="logo">
+            <img src="./images/dream medai.jpg" alt="Dream Media" class="logo-img">
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <i class="ph-bold ph-x" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link data-nav-toggler>Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link data-nav-toggler>Services</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#feature" class="navbar-link" data-nav-link data-nav-toggler>Features</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#project" class="navbar-link" data-nav-link data-nav-toggler>Marketing</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <i class="ph-bold ph-list" aria-hidden="true"></i>
+      </button>
+
+      <!-- Book Now Button -->
+      <a href="./كتاب/كتاب دريم ميديا.pdf" class="btn btn-primary has-before has-after" data-cursor="">
+        <span data-book-text>Book Now</span>
+        <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i>
+      </a>
+
+      <!-- Header Controls (Language & Theme) -->
+      <div class="header-controls">
+        <button id="lang-toggle-btn" class="btn btn-secondary has-before has-after btn--small" type="button">
+          EN
+        </button>
+        <button id="themeToggle" class="btn btn-secondary has-before has-after btn--small btn--icon" type="button" aria-label="Toggle theme">
+          <i class="ph ph-sun" data-theme-icon aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile nav backdrop -->
+    <div class="overlay" data-nav-toggler></div>
+  </header>
+
+
+
+
+
+  <!-- ============================================
+       MAIN CONTENT
+  ============================================ -->
+  <main>
+    <article>
+
+      <!-- ============================================
+           HERO SECTION
+      ============================================ -->
+      <section class="section hero" id="home" aria-label="hero">
+
+        <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-eyebrow" data-hero-in>
+              <span class="dot" aria-hidden="true"></span>
+              Baghdad &middot; Media, Marketing &amp; Commercials
+            </p>
+
+            <h1 class="h1 hero-title" id="hero-heading" data-split-chars>
+              Building Digital <span class="has-before">Marketing</span>, Brand and Experience
+            </h1>
+
+            <p class="hero-text" data-hero-in>
+              At Dream Media, we specialize in marketing, brand building, training, and consulting, delivering efficient and impactful solutions.
+            </p>
+
+            <div class="hero-actions" data-hero-in>
+              <a href="./كتاب/كتاب دريم ميديا.pdf" class="btn btn-primary has-before has-after" data-magnetic data-cursor="">
+                <span data-book-text>Book Now</span>
+                <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i>
+              </a>
+              <a href="#project" class="btn btn-ghost" data-hero-work-btn data-magnetic data-cursor="">
+                <i class="ph-bold ph-play" aria-hidden="true"></i>
+                <span>See Our Work</span>
+              </a>
+            </div>
+
+          </div>
+
+          <figure class="hero-banner" data-hero-banner>
+            <div class="hero-banner-ring" aria-hidden="true"></div>
+            <img src="./images/Untitlekklood-removebg-preview.png" width="200" height="200" alt="Dream Media Hero Banner" class="w-100">
+          </figure>
+
+        </div>
+
+        <a href="#service" class="scroll-cue" aria-label="Scroll to explore">
+          <span></span>
+        </a>
+
+      </section>
+
+
+
+      <!-- ============================================
+           CAPABILITY MARQUEE
+      ============================================ -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track" data-marquee-track>
+          <span class="marquee-item" data-marquee-item="1">business consulting</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+          <span class="marquee-item" data-marquee-item="2">Meketing &amp; Communication</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+          <span class="marquee-item" data-marquee-item="3">Printing</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+          <span class="marquee-item" data-marquee-item="4">Event management</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+          <span class="marquee-item" data-marquee-item="5">Design and Vreatives</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+          <span class="marquee-item" data-marquee-item="6">business &amp; consulting</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+          <span class="marquee-item" data-marquee-item="7">Business Development</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+        </div>
+        <div class="marquee-track" data-marquee-track aria-hidden="true">
+          <span class="marquee-item" data-marquee-item="1">business consulting</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+          <span class="marquee-item" data-marquee-item="2">Meketing &amp; Communication</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+          <span class="marquee-item" data-marquee-item="3">Printing</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+          <span class="marquee-item" data-marquee-item="4">Event management</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+          <span class="marquee-item" data-marquee-item="5">Design and Vreatives</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+          <span class="marquee-item" data-marquee-item="6">business &amp; consulting</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+          <span class="marquee-item" data-marquee-item="7">Business Development</span>
+          <i class="ph-bold ph-asterisk" aria-hidden="true"></i>
+        </div>
+      </div>
+
+
+
+      <!-- ============================================
+           SERVICES SECTION
+      ============================================ -->
+      <section class="section service" id="service" aria-label="service">
+        <span class="section-kicker" data-parallax aria-hidden="true">01</span>
+        <div class="container">
+
+          <p class="section-subtitle has-before text-center">Our Services</p>
+          <h2 class="h2 section-title text-center" data-split-lines>Managing your business with our <span class="has-before">best service</span></h2>
+
+          <ul class="grid-list" data-stagger-group>
+
+            <li>
+              <div class="service-card" style="--color: 174, 77%, 50%" data-tilt data-cursor="" data-service-bg="./images/project-.jpeg">
+                <span class="card-index">01</span>
+
+                <div class="card-icon">
+                  <img src="./images/service-icon-1.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">business consulting </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 267, 76%, 57%" data-tilt data-cursor="" data-service-bg="./images/feature-banne.jpeg">
+                <span class="card-index">02</span>
+
+                <div class="card-icon">
+                  <img src="./images/service-icon-2.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title"> Meketing & Communication </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 17, 100%, 68%" data-tilt data-cursor="" data-service-bg="./images/project- (3).jpeg">
+                <span class="card-index">03</span>
+
+                <div class="card-icon">
+                  <img src="./images/service-icon-3.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Printing </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 343, 98%, 60%" data-tilt data-cursor="" data-service-bg="./images/project- (4).jpeg">
+                <span class="card-index">04</span>
+
+                <div class="card-icon">
+                  <img src="./images/service-icon-4.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Event management</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 210, 100%, 53%" data-tilt data-cursor="" data-service-bg="./images/تعاونات.jpg">
+                <span class="card-index">05</span>
+
+                <div class="card-icon">
+                  <img src="./images/service-icon-5.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Design and Vreatives</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 157, 89%, 44%" data-tilt data-cursor="" data-service-bg="./images/project- (1).jpeg">
+                <span class="card-index">06</span>
+
+                <div class="card-icon">
+                  <img src="./images/service-icon-6.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">business & consulting</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 52, 98%, 50%" data-tilt data-cursor="" data-service-bg="./images/project- (2).jpeg">
+                <span class="card-index">07</span>
+
+                <div class="card-icon">
+                  <img src="./images/service-icon-7.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Business Development</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <a href="https://deedcod.github.io/Dream-Media/" class="link-card" style="--color: 203, 97%, 75%" data-cursor="" data-service-bg="./images/feature-banne.jpeg">
+                <span class="span"> More Service</span>
+
+                <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <!-- ============================================
+           PARTNERS SECTION
+      ============================================ -->
+      <section class="section partners" id="partners" aria-label="partners">
+        <div class="container">
+
+          <p class="section-subtitle has-before text-center">Our Partners</p>
+          <h2 class="h2 section-title text-center" data-split-lines>Trusted by Leading <span class="has-before">Companies</span></h2>
+
+          <div class="partners-content" data-reveal-up>
+            <!-- motion.js slices the partner sheet into individual logo
+                 tiles and builds the marquee here. If that can't run, the
+                 original combined image below stays as the fallback. -->
+            <div class="partners-marquee" data-partners role="img" aria-label="Our partners and collaborators">
+              <figure class="partners-banner" data-partners-fallback>
+                <img src="./images/تعاونات.jpg" alt="Dream Media Partners and Collaborations" class="w-100">
+              </figure>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- ============================================
+           FEATURES SECTION
+      ============================================ -->
+      <section class="section feature" id="feature" aria-label="feature">
+        <span class="section-kicker" data-parallax aria-hidden="true">02</span>
+        <div class="container" data-feature-pin>
+
+          <figure class="feature-banner" data-feature-visual>
+            <img src="./images/feature-banne.jpeg" width="582" height="585" loading="lazy" alt="Dream Media Features" class="w-100" data-feature-base-img>
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle has-before">Why Choose Dream Media</p>
+            <h2 class="h2 section-title" data-split-lines>
+              Experts in Marketing, Training, and Business Consulting, Solving Client Challenges
+            </h2>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card" data-feature-step data-feature-img="./images/project-.jpeg">
+
+                  <div class="card-icon" style="--color: 174, 77%, 50%">
+                    <i class="ph-duotone ph-rocket-launch" aria-hidden="true"></i>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Fast working process</h3>
+
+                    <p class="card-text">
+                      At Dream Media we specialize in Marketing, building brand for agency, social media design.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card" data-feature-step data-feature-img="./images/feature-banne.jpeg">
+
+                  <div class="card-icon" style="--color: 241, 77%, 63%;">
+                    <i class="ph-duotone ph-users-three" aria-hidden="true"></i>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Didicated team</h3>
+
+                    <p class="card-text">
+                      At Dream Media we specialize in designing, building, brand for agency, social media design.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card" data-feature-step data-feature-img="./images/project- (1).jpeg">
+
+                  <div class="card-icon" style="--color: 343, 98%, 60%;">
+                    <i class="ph-duotone ph-headset" aria-hidden="true"></i>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">24/7 hours support</h3>
+
+                    <p class="card-text">
+                      At Dream Media we specialize in designing, building brand for agency, social media design.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ============================================
+           MARKETING PROJECTS SECTION
+      ============================================ -->
+      <section class="section marketing" id="project" aria-label="marketing projects">
+        <span class="section-kicker" data-parallax aria-hidden="true">03</span>
+        <div class="container">
+          <p class="section-subtitle has-before text-center">Our Work</p>
+          <h2 class="h2 section-title text-center" data-split-lines>Featured <span class="has-before">Projects</span></h2>
+
+    <div class="swiper marketing-slider" data-cursor="Drag">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide marketing-card">
+          <img src="./images/project- (1).jpeg" class="slider-img" data-lightbox alt="Dream Media project — certificate presentation" />
+          <div class="card-overlay">
+            <h3 class="slider-title"></h3>
+            <a href="#" class="slider-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide marketing-card">
+          <img src="./images/project- (2).jpeg" class="slider-img" data-lightbox alt="Dream Media project — award presentation" />
+          <div class="card-overlay">
+            <h3 class="slider-title"></h3>
+            <a href="#" class="slider-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide marketing-card">
+          <img src="./images/project-.jpeg" class="slider-img" data-lightbox alt="Dream Media project highlight" />
+          <div class="card-overlay">
+            <h3 class="slider-title"></h3>
+            <a href="#" class="slider-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide marketing-card">
+          <img src="./images/project- (4).jpeg" class="slider-img" data-lightbox alt="Dream Media project — event ceremony" />
+          <div class="card-overlay">
+            <h3 class="slider-title"></h3>
+            <a href="#" class="slider-btn">View Project</a>
+          </div>
+        </div>
+      </div>
+
+          <!-- Navigation Arrows -->
+          <div class="swiper-button-next marketing-next" aria-label="next slide"></div>
+          <div class="swiper-button-prev marketing-prev" aria-label="previous slide"></div>
+
+          <!-- Pagination Dots -->
+          <div class="swiper-pagination marketing-pagination"></div>
+        </div>
+
+        <!-- Reels Row -->
+        <ul class="reels-row" data-stagger-group>
+          <li class="reel-card" data-tilt data-cursor="Play">
+            <span class="reel-badge" data-reel-badge>
+              <i class="ph-bold ph-video-camera" aria-hidden="true"></i>
+              Reel
+            </span>
+            <video src="./vedoi/vedio1.mp4" loading="lazy" autoplay muted loop playsinline class="img-cover"></video>
+          </li>
+          <li class="reel-card" data-tilt data-cursor="Play">
+            <span class="reel-badge" data-reel-badge>
+              <i class="ph-bold ph-video-camera" aria-hidden="true"></i>
+              Reel
+            </span>
+            <video src="./vedoi/vedio2.mp4" loading="lazy" autoplay muted loop playsinline class="img-cover"></video>
+          </li>
+          <li class="reel-card" data-tilt data-cursor="Play">
+            <span class="reel-badge" data-reel-badge>
+              <i class="ph-bold ph-video-camera" aria-hidden="true"></i>
+              Reel
+            </span>
+            <video src="./vedoi/vedoi3.mp4" loading="lazy" autoplay muted loop playsinline class="img-cover"></video>
+          </li>
+        </ul>
+
+        </div>
+      </section>
+
+
+
+      <!-- ============================================
+           CALL TO ACTION BAND
+      ============================================ -->
+      <section class="section cta-band" aria-label="get in touch">
+        <div class="container">
+          <div class="cta-inner" data-reveal-up>
+            <div class="cta-text">
+              <p class="section-subtitle has-before" data-cta-eyebrow>Let's Talk</p>
+              <h2 class="h2" data-cta-title data-split-lines>Let's build your next campaign together</h2>
+            </div>
+            <a href="https://wa.me/9647708118020" target="_blank" rel="noopener" class="btn btn-primary has-before has-after cta-btn" data-magnetic data-cursor="">
+              <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+              <span data-cta-btn>Message Us</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- ============================================
+       FOOTER
+  ============================================ -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section" data-stagger-group>
+
+        <!-- Footer Brand / About -->
+        <div class="footer-brand">
+          <a href="#top" class="logo footer-logo">
+            <img src="./images/dream medai.jpg" alt="Dream Media" class="logo-img">
+          </a>
+          <p class="footer-text">
+            Baghdad-based marketing and business solutions company specializing in digital marketing, social media management, video production, printing, and training.
+            We help businesses and organizations grow and build a strong presence through creative strategies and measurable results.
+          </p>
+
+          <!-- Social Media Links -->
+          <ul class="social-list">
+            <li>
+              <a href="https://www.youtube.com/@DreamMediaprofile" class="social-link" target="_blank" rel="noopener" aria-label="YouTube" data-magnetic data-cursor="">
+                <i class="ph-fill ph-youtube-logo" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/dreamdigitalmarketingagency0/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn" data-magnetic data-cursor="">
+                <i class="ph-fill ph-linkedin-logo" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/dream_mediaco?igsh=MW1hbzB6dzVic3dxMg==" class="social-link" target="_blank" rel="noopener" aria-label="Instagram" data-magnetic data-cursor="">
+                <i class="ph-fill ph-instagram-logo" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/Dreamdigitalmarketing0#" class="social-link" target="_blank" rel="noopener" aria-label="Facebook" data-magnetic data-cursor="">
+                <i class="ph-fill ph-facebook-logo" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-quicklinks">
+          <p class="footer-list-title" data-footer-links-title>Quick Links</p>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link" data-footer-quick-link="home">Home</a></li>
+            <li><a href="#service" class="footer-link" data-footer-quick-link="services">Services</a></li>
+            <li><a href="#feature" class="footer-link" data-footer-quick-link="features">Features</a></li>
+            <li><a href="#project" class="footer-link" data-footer-quick-link="marketing">Marketing</a></li>
+          </ul>
+        </div>
+
+        <!-- Instagram Posts -->
+        <div class="footer-instagram">
+          <p class="footer-list-title">Instagram post</p>
+          <ul class="insta-post">
+            <li>
+              <div class="insta-card" data-cursor="">
+                <figure class="post-banner">
+                  <video src="./vedoi/vedio1.mp4" width="99" height="180" loading="lazy" autoplay muted loop playsinline class="img-cover"></video>
+                </figure>
+                <a href="https://www.instagram.com/reel/DQ100meCCx1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener" class="card-content" aria-label="View Instagram Post 1">
+                  <i class="ph-fill ph-instagram-logo" aria-hidden="true"></i>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="insta-card" data-cursor="">
+                <figure class="post-banner">
+                  <video src="./vedoi/vedio2.mp4" width="99" height="180" loading="lazy" autoplay muted loop playsinline class="img-cover"></video>
+                </figure>
+                <a href="https://www.instagram.com/reel/DQ100meCCx1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener" class="card-content" aria-label="View Instagram Post 2">
+                  <i class="ph-fill ph-instagram-logo" aria-hidden="true"></i>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="insta-card" data-cursor="">
+                <figure class="post-banner">
+                  <video src="./vedoi/vedoi3.mp4" width="99" height="180" loading="lazy" autoplay muted loop playsinline class="img-cover"></video>
+                </figure>
+                <a href="https://www.instagram.com/reel/DQoyohhiGQQ/?igsh=aXhzdjJ3MWxtMTJk" target="_blank" rel="noopener" class="card-content" aria-label="View Instagram Post 3">
+                  <i class="ph-fill ph-instagram-logo" aria-hidden="true"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 Dream Media. All Rights Reserved
+        </p>
+        <ul class="footer-bottom-list">
+          <li><a href="https://wa.me/9647708118020" target="_blank" rel="noopener" class="footer-bottom-link">WhatsApp</a></li>
+          <li><a href="mailto:mustafamuafaqdreammedia@outlook.com" class="footer-bottom-link">Email</a></li>
+          <li><a href="tel:+9647708118020" class="footer-bottom-link">Phone</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!-- ============================================
+       BACK TO TOP BUTTON
+  ============================================ -->
+  <a href="#top" class="back-top-btn" id="backTopBtn" aria-label="Back to top" data-cursor="">
+    <i class="ph-bold ph-arrow-up" aria-hidden="true"></i>
+  </a>
+
+
+
+  <!-- ============================================
+       FLOATING CONTACT BUTTON
+  ============================================ -->
+  <div class="floating-contact">
+    <button class="fc-btn" id="fc-toggle" aria-label="Contact Us" data-magnetic data-cursor="">
+      <i class="ph-bold ph-chats-circle" aria-hidden="true"></i>
+    </button>
+
+    <div class="fc-menu" id="fc-menu">
+      <a href="https://wa.me/9647708118020" target="_blank" rel="noopener" class="fc-item">
+        <i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i>
+        <span>WhatsApp</span>
+      </a>
+      <a href="mailto:mustafamuafaqdreammedia@outlook.com" class="fc-item">
+        <i class="ph-bold ph-envelope-simple" aria-hidden="true"></i>
+        <span>Email</span>
+      </a>
+      <a href="tel:+9647708118020" class="fc-item">
+        <i class="ph-bold ph-phone" aria-hidden="true"></i>
+        <span>Phone</span>
+      </a>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- ============================================
+       LIGHTBOX FOR IMAGES
+  ============================================ -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close (Esc)"><i class="ph-bold ph-x" aria-hidden="true"></i></button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Previous"><i class="ph-bold ph-caret-left" aria-hidden="true"></i></button>
+    <div class="lightbox__content">
+      <img class="lightbox__img" src="" alt="" />
+      <p class="lightbox__caption" aria-hidden="true"></p>
+    </div>
+    <button class="lightbox__nav lightbox__next" aria-label="Next"><i class="ph-bold ph-caret-right" aria-hidden="true"></i></button>
+  </div>
+
+  <!-- ============================================
+       JAVASCRIPT LIBRARIES
+  ============================================ -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- GSAP + Plugins (free as of the 2025 Webflow release) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="./scrapt.js"></script>
+  <script src="./motion.js"></script>
+
+</body>
+</html>
