@@ -358,6 +358,51 @@
   }
 
   /*============================================
+    VIEWPORT-AWARE VIDEO PLAYBACK
+    The page holds six <video> elements (three reels, repeated again in
+    the footer). Autoplaying them all at once exceeds Chrome's limit on
+    concurrent video decoders on many machines, so the surplus ones
+    render as black boxes — and decoding six 1080x1920 streams makes
+    scrolling heavy. Play only what's actually on screen.
+  ============================================*/
+  function initVideoPlayback() {
+    var videos = document.querySelectorAll("video");
+    if (!videos.length) return;
+
+    function attempt(v) {
+      var p = v.play();
+      // Autoplay can still be refused (power saving, platform policy);
+      // swallow it so it doesn't surface as an unhandled rejection.
+      if (p && typeof p.catch === "function") p.catch(function () {});
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      videos.forEach(attempt);
+      return;
+    }
+
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          var v = entry.target;
+          if (entry.isIntersecting) {
+            attempt(v);
+          } else if (!v.paused) {
+            v.pause();
+          }
+        });
+      },
+      // Start slightly before they scroll into view so there's no
+      // visible gap where the card sits empty.
+      { rootMargin: "200px 0px", threshold: 0.1 }
+    );
+
+    videos.forEach(function (v) {
+      io.observe(v);
+    });
+  }
+
+  /*============================================
     FEATURE SCROLL STEPS
     Pins the section and walks through the three cards as you scroll:
     the active card lights up, the visual crossfades to a matching
@@ -932,6 +977,7 @@
   function boot() {
     initLenis();
     initHeaderScroll();
+    initVideoPlayback();
     initMarquee();
     initPartners();
     // Registered last: drives every marquee above from one scroll listener.
